@@ -1,3 +1,41 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.sub-title {
+  font-weight: 300;
+}
+
+.container-state{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.btn-click {
+  border: none;
+  box-shadow: 2px 4px 2px 1px rgba(0, 0, 255, .2);
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-click:hover {
+  background-color: #282c34;
+  color: aliceblue;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.btn-click:active {
+  border: 1px solid #282c34;
+}
+
 .App {
   text-align: center;
 }
