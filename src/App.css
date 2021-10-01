@@ -24,6 +24,8 @@ body{
   border-radius: 10%;
   padding: 10px;
   cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
 }
 
 .btn-click:hover {
@@ -34,6 +36,18 @@ body{
 
 .btn-click:active {
   border: 1px solid #282c34;
+  font-weight: 300;
+}
+
+.input-text {
+  border: 1px solid #969696;
+  padding: 10px;
+  height: 10%;
+  width: 50%;
+}
+
+.input-text:active {
+  border: none;
 }
 
 .App {
