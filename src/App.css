@@ -39,6 +39,10 @@ body{
   font-weight: 300;
 }
 
+.green-color {
+  background-color: aquamarine;
+}
+
 .input-text {
   border: 1px solid #969696;
   padding: 10px;

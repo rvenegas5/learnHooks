@@ -10,7 +10,12 @@ const State = () => {
 
   const updateText = (event) => {
     const text = event.target.value;
-    setInputText(text)
+    setInputText(text);
+  };
+
+  const clearData = () => {
+    setCounter(0);
+    setInputText("...");
   };
 
   return (
@@ -24,9 +29,16 @@ const State = () => {
       </div>
       <div>
         <h2 className="title">useState Hook with a Input text</h2>
-        <input className="input-text" placeholder="enter something..." onChange={updateText} />
+        <input
+          className="input-text"
+          placeholder="enter something..."
+          onChange={updateText}
+        />
         <h4>{inputText}</h4>
       </div>
+      <button className="btn-click green-color sub-title" onClick={clearData}>
+        Clear all!
+      </button>
     </div>
   );
 };
