@@ -7,7 +7,7 @@ const State = () => {
   const updateCounter = () => {
     setCounter(counter + 1);
   };
-
+  
   const updateText = (event) => {
     const text = event.target.value;
     setInputText(text);
