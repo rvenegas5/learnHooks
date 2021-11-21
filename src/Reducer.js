@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 
 const Reducer = () => {
-  const [counter, setCounter] = useState(0)
+  const [count, setCount] = useState(0);
+  const [showText, setShowText] = useState(false);
+
   return (
-    <div className="container-state">
-      <h2 className="title">useReducer with a Counter and a Text</h2>
-      <h4>{counter}</h4>
-      <button className="btn-click sub-title">Click Here!</button>
-      ()
+    <div>
+      <h1>{ count }</h1>
+      <button onClick={() => {
+        setCount(count + 1)
+        setShowText(!showText)
+      }}>
+        Click Here
+      </button>
+
+      {showText && <p>You have {count} clicks</p>}
     </div>
   )
 };
