@@ -16,8 +16,11 @@ const Reducer = () => {
 
   return (
     <div>
-      <h1>{ state.count }</h1>
-      <button onClick={() => {
+      <h2 className="title">useState Hook with a Counter</h2>
+      <h4>{ state.count }</h4>
+      <button 
+      className="btn-click sub-title"
+      onClick={() => {
         dispatch({type: "INCREMENT"})
         dispatch({type: "toogleShowText"})
       }}>
